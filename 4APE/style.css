@@ -181,6 +181,12 @@ body {
     text-align: center;
     font-family: 'Pacifico', cursive;
 }
+.tap {
+    color: black;
+    text-align: center;
+    /* font-family: 'Pacifico', cursive; */
+}
+
 
 .text:hover:before {
     white-space: pre-wrap;
