@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  width: 960px;
+  padding: 50px 50px;
+  margin: 30px auto;
+  border-radius: 2%;
+  background-color: #81e4e4;     /*light blue*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.banana-body {
+  height: 80%;
+  width: 0px;
+  top: 50px;
+  left: 160px;
+  border-right: 180px solid #ecec13;    /* yellow */
+  border-radius: 0 150px 150px 0%;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.banana-outline {
+  height: 120%;
+  width: 0px;
+  top: -20px;
+  left: -50px;
+  border-top: 30px solid transparent;
+  border-right: 120px solid #81e4e4;
+  border-radius: 0 120px 120px 0%;
+  position: absolute;
+}
+
+.banana-end {
+  width: 10px;
+  height: 15px;
+  border-radius: 0 0 3em 3em;
+  background: #996633;            /* brown */
+  position: absolute;
+  transform: rotate(65deg);
+  bottom: 60px;
+  left: 160px;
+}
+
+.banana-top {
+  width: 35px;
+  height: 12px;
+  background: #4d9933;            /* green */
+  position: absolute;
+  transform: rotate(25deg);
+  border-radius: 50% 0 0 50%;
+  top: 33px;
+  left: 210px;
+}
+
+.banana-left-eye {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #e6e619;      /* yellow */
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  left: 200px;
+}
+
+.banana-left-eye::after {
+  content:"";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  width: 35px;
+  height: 35px;
+  left: 30px;
+  top: 30px;
+  animation: eyes 2s infinite;
+}
+
+.banana-right-eye {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #e6e619;      /* yellow */
+  background: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  left: 290px;
+}
+
+.banana-right-eye::after {
+  content:"";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  width: 35px;
+  height: 35px;
+  left: 30px;
+  top: 30px;
+  animation: eyes 2s infinite;
+}
+
+.banana-mouth {
+  width: 30px;
+  height: 20px;
+  border-radius: 0 0 5em 5em;
+  border-bottom: 5px solid #675340; /* dark outline */
+  border-right: 5px solid #675340; /* dark outline */
+  border-left: 5px solid #675340; /* dark outline */
+  position: absolute;
+  left: 270px;
+  top: 270px;
+}
+
+.banana-float {
+  width: 350px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #868679;
+  position: relative;
+  top: 330px;
+  left: -150px;
+}
+
+.banana {
+  height: 500px;
+  width: 500px;
+  top: 80px;
+  position: relative;
+  animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes float {
+  0%, 100% {
+    top: 80px;
+  }
+
+  50% {
+    top: 70px;
+  }
+}
+
+@keyframes eyes {
+
+  0%, 50%, 100% {
+    left: 30px;
+  }
+
+  25% {
+    left: 20px;
+  }
+
+75% {
+  left: 40px;
+}
+
+}
+
+.text {
+    font-family: 'Merriweather Sans', sans-serif;
+    position: absolute;
+    color: #ff8fa3;
+    font-size: 60px;
+    text-align: center;
+    width: ;
+    top: ;
+    
+}
